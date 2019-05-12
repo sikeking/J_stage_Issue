@@ -24,4 +24,5 @@ def get_table_of_content(issue_title_list):
                     issue_Title.append(j.a.get('title'))
         issue_List.append(issue_Title)
     data = pd.DataFrame(issue_List,index = index_list)
+    data.column = data.column + 1
     data.T.to_csv('Newly_Issue_List{}.csv'.format(TODAY))
