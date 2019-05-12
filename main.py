@@ -9,7 +9,6 @@ from get_table_of_content import get_table_of_content
 
 URL = 'https://www.jstage.jst.go.jp/browse/-char/ja'
 
-if(URL)
 html = urlopen(URL)
 soup = BeautifulSoup(html,'html.parser')
 
