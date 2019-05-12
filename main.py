@@ -6,12 +6,10 @@ import time
 
 from get_table_of_content import get_table_of_content
 
-word1 = ''
-word2 = ''
-Issues = ''
 
-URL_1 = 'https://www.jstage.jst.go.jp/browse/-char/ja'
-URL_2 = 'https://www.jstage.jst.go.jp/result/global/-char/ja?item1=4&word1={}&cond1=&item2=&word2=&cond2=&item3=&word3=&cond3=&item4=&word4=&count={}&from=&order=&type=&license=&attribute=&languageType=&option=&yearfrom=&yearto=&category=&cdjournal=&favorite=&translate=&bglobalSearch=false&sortby=1&showRecodsH=20&showRecords=20'.format(word1,word2,Issue)
+URL = 'https://www.jstage.jst.go.jp/browse/-char/ja'
+
+if(URL)
 html = urlopen(URL)
 soup = BeautifulSoup(html,'html.parser')
 
