@@ -6,7 +6,6 @@ import time
 
 from get_table_of_content import get_table_of_content
 
-
 URL = 'https://www.jstage.jst.go.jp/browse/-char/ja'
 
 html = urlopen(URL)
